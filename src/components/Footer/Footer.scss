@@ -1,0 +1,23 @@
+
+footer{ 
+    width:90%; 
+    margin:0 auto;
+    bottom:10px;
+    display:flex;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+    color:#f8dcdc;
+    font-size:.8rem;
+    
+    a{
+        color:#f8dcdc;
+        text-decoration: none;
+        font-family: 'montserrat', sans-serif;
+     }
+   
+    small{ 
+        text-align:center;
+        flex:2;
+        
+    }
+}

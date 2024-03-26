@@ -1,11 +1,17 @@
 import React from 'react' 
-
+import './Footer.scss'
 
 const Footer = ()=>{ 
 
     return(
-
-        <p>Footer</p>
+            <>
+              <footer>
+        <a href="https://www.github.com/cjwalt">cjwalt codes</a>
+       <small> &copy; 2024 buycof!
+        </small>
+      </footer>
+            </>
+    
     )
 }
 
