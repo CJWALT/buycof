@@ -7,8 +7,9 @@ nav{
     display:flex; 
     height:6rem;
     align-items: center;
-    position: static;
+    position: relative;
     width:100%;
+    z-index: 99;
 
     .nav_wrap{ 
         display:flex; 
@@ -43,6 +44,7 @@ nav{
         }
 
         .cart_btn{ 
+            
             display:flex; 
             justify-content: flex-end;
             flex:1;
@@ -58,6 +60,7 @@ nav{
                 justify-content: center;
                 padding:.6rem;
                 cursor:pointer;
+
                 span{ 
                 position:absolute;
                 display:flex; 

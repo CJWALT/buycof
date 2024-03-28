@@ -3,6 +3,7 @@ import './Home.scss'
 import { Link } from 'react-router-dom';
 import XIcon from '@mui/icons-material/X';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import Slider from '../../components/Slider/Slider';
 
 const Home = ()=>{
 
@@ -24,22 +25,31 @@ const Home = ()=>{
                             <p>we select our teas with love... buycof!</p>
                       </div>
                         
+
+
+                      <div className="socials">
+                        <Link to='/' className='home-social--btn'> <XIcon className="social-icon"/></Link>
+                        <Link to='/' className='home-social--btn'><InstagramIcon className="social-icon"/></Link>
+
+
                         <Link to="/cafes" className='exp_link'>
                             <button>
                                 explore
                             </button>
                         </Link>
+                    
+                    </div>
+
+                        
                      
     
                     </div>
                 </div>
-                <div className="socials">
-                    <XIcon className="social-icon"/>
-                    <InstagramIcon className="social-icon"/>
-                </div>
+              
 
             </div>
-
+        <Slider/>
+        
         </div>
         )
 }

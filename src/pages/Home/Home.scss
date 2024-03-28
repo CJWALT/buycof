@@ -100,12 +100,18 @@
          }
       }
       .socials{ 
-        color:#966F6F;
+        
         display:flex; 
         gap:.8rem;
-        .social-icon{ 
-            font-size:3rem;
-        }
+        
+        .home-social--btn{
+            text-decoration: none;
+            color:#F8DCDC;
+            .social-icon{ 
+                font-size:3rem;
+            }
+
+         }
       }
        
     }
