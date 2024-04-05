@@ -11,9 +11,11 @@ const Navbar = () =>{
         <nav>
 
                 <div className='nav_wrap'>
-                    <Link to='/' className="logo">
-                        <img src="./img/LOGO.png" alt=" logo buycof" />
-                    </Link>
+                    <div className="logo">
+                        <Link to='/'>
+                            <img src="./img/LOGO.png" alt=" logo buycof" />
+                        </Link>
+                    </div>
                     <div className="links">
                         <Link to='/'className='link'>Home</Link>
                         <Link to='/cafes'className='link'>Cafe</Link>

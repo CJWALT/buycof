@@ -2,7 +2,8 @@
 footer{ 
     width:90%; 
     margin:0 auto;
-    bottom:10px;
+    position:relative; 
+    // bottom:0px;    
     display:flex;
     font-family: 'montserrat', sans-serif;
     font-weight: 500;

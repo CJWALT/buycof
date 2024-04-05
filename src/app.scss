@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mada:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik+Glitch+Pop&display=swap');
+
+
+
+
 *{
     margin:0; 
     padding:0; 
@@ -9,7 +14,7 @@
 }
 
 .app{
-    height:100vh; 
+    // height:100vh; 
     width:100vw;
     position:relative;
     background:radial-gradient(circle at top right, #C81616, #9F1313);

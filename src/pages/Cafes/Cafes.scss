@@ -1,0 +1,125 @@
+
+
+#wrapper{
+    position:absolute; 
+    top:0; 
+    width:100%;
+    border:1px solid red;
+    background:radial-gradient(circle at top right, #F8DCDC, #966f6f);
+
+    .cafes{ 
+        // position:absolute;
+       margin-top:8rem; 
+       height:auto;
+    
+        .header-banner{ 
+            background: url(../../../public/img/cafes-banner.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:13.8rem;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            
+            h2{ 
+                font-family: 'Rubik Glitch', sans-serif;
+                font-size:5rem;
+                letter-spacing: .7rem;;
+                color:#fff;
+                text-shadow: 
+                -4px -4px 0 #966F6F,  
+                4px -4px 0 #966F6F,
+                -4px 4px 0 #966f96,
+                4px 4px 0 #966f96; /* Text shadow with offset for each direction */
+            }
+            
+        }
+
+        .sort-search{ 
+            display:flex; 
+            align-items: center;
+            justify-content: space-between;
+            width:80%; 
+            margin:0 auto;
+            padding:5rem 0;
+
+            .sort-wrap{ 
+                display:flex; 
+                align-items: center;
+                gap:1rem;
+                
+                h4{ 
+                    font-family:'mada', sans-serif;
+                    font-size:50px; 
+                    font-weight: 500;
+                    text-transform: lowercase;
+                    color:white;
+                }
+
+                .sort-input{ 
+                    .asc, .desc {
+                        
+                        display:flex; 
+                        gap:10px; 
+                        align-items:center; 
+                        justify-content: center;
+
+                        input[type="radio"]{
+                            appearance:none;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            
+                            width: 15px;
+                            height: 15px;
+                            border: 3px solid #F8DCDC; /* Set border color to blue */
+                            border-radius: 50%;
+                            outline: none; /* Remove default focus outline */
+                        }
+                    }
+                    label{
+                        color:white;
+                        font-size:20px; 
+                        font-family: 'mada', sans-serif; 
+
+                    }
+
+    
+                }
+               
+            }
+
+            .search{ 
+               display:flex; 
+               justify-items: center;
+                
+
+                input[type="text"]{ 
+                    border:1px solid #9F1313;
+                    height:45px;
+                    width:260px;
+                    background:transparent;
+                    border-radius:20px 0 0 20px;
+                    padding:0 8px;
+                }
+                 button{ 
+                    border-radius: 0 20px 20px 0;
+                    height:45px; 
+                    width:60px;
+                    background-color: #F8DCDC;
+                    border:none;
+                    cursor:pointer;
+
+                    .search-btn{ 
+                        width:25px;
+                        height:25px; 
+                        color:#C81616;
+
+                    }
+
+                 }
+            }
+        }
+    }
+
+}
+

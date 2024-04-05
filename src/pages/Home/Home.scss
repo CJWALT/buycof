@@ -1,9 +1,9 @@
 .home{
-    z-index:99;
+    
     width:100vw;
     display:flex;
     justify-content: center;
-    height:calc(100vh - 8rem);
+    height:calc(100vh - 7rem);
     
     .home_wrap{
         display:flex; 
@@ -102,13 +102,15 @@
       .socials{ 
         
         display:flex; 
+        align-items: center;
+        justify-content: center;
         gap:.8rem;
         
         .home-social--btn{
             text-decoration: none;
             color:#F8DCDC;
             .social-icon{ 
-                font-size:3rem;
+                font-size:2rem;
             }
 
          }

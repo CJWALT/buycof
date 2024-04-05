@@ -1,0 +1,24 @@
+.card{ 
+    border:1px solid red;
+        width:70%; 
+        margin:0 auto; 
+        overflow:hidden;
+        
+    .card-wrap{ 
+        border:1px solid red;
+        .card-img{ 
+            border:1px solid red;
+            width:20px;
+            overflow:hidden;
+            height:20px;
+
+            img{ 
+                width:60%; 
+                height:auto;
+            }
+        }
+    
+    }
+
+}
+
