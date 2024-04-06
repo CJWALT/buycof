@@ -1,120 +1,127 @@
-.home{
-    
-    width:100vw;
-    display:flex;
-    justify-content: center;
-    height:calc(100vh - 7rem);
-    
-    .home_wrap{
-        display:flex; 
-        justify-content:center;
-        width:80%;
-        flex-direction: column;
-        margin:0 auto;
-        gap:4rem;
-        
+#home-wrapper{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    top:0;
+    background:radial-gradient(circle at top right, #C81616, #9F1313);
 
-      .banner_wrap{ 
-        display: flex;
-        flex-direction: column;
+    .home{
+    
+        width:100vw;
+        display:flex;
         justify-content: center;
-        align-items: center;
-        gap:15px;
-        width:50%; 
-
-        .center_bar{
+        height:calc(100vh - 8rem);
+        
+        .home_wrap{
             display:flex; 
-            flex-direction: row;
-            align-items: center;
-            white-space:nowrap;
-            gap:.8rem;
-        
-        
-        span.bar_before{          
-            
-            width:140px; 
-            display:block;
-            box-shadow:inset 0 0 0 2px #966F6F;
-            height:26px; 
-            background:#F8DCDC; 
-            border-radius: 24px;
-        }
-
-        h2{ 
-            font-size:106px;
-            font-weight:700;
-            font-family: 'Sahitya', sans-serif;
-            color:white;
-            line-height:85px;
-            text-shadow: 
-                -4px -4px 0 #966F6F,  
-                4px -4px 0 #966F6F,
-                -4px 4px 0 #966F6F,
-                4px 4px 0 #966F6F;
-           
-        }
-        }
-
-        .para_btn{
-            width:100%; 
-            display: flex;
-            align-items: end;
-            align-content:end  ;
+            justify-content:center;
+            width:80%;
             flex-direction: column;
-            gap:3rem;
+            margin:0 auto;
+            gap:4rem;
+
+          .banner_wrap{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:15px;
+            width:50%; 
+    
+            .center_bar{
+                display:flex; 
+                flex-direction: row;
+                align-items: center;
+                white-space:nowrap;
+                gap:.8rem;
             
-            .para{
-                p{ 
-                    font-family: 'montserrat subrayada',sans-serif;
-                    font-size:1rem;
-                    color:rgba(248, 220, 220, 0.7);
-                    text-decoration: none;
-                    text-decoration: none;
-                }
-                p:last-child{
-                    text-align: right;
-                    margin-top:.4rem;
+            
+            span.bar_before{          
                 
-                }
+                width:140px; 
+                display:block;
+                box-shadow:inset 0 0 0 2px #966F6F;
+                height:26px; 
+                background:#F8DCDC; 
+                border-radius: 24px;
             }
+    
+            h2{ 
+                font-size:106px;
+                font-weight:700;
+                font-family: 'Sahitya', sans-serif;
+                color:white;
+                line-height:85px;
+                text-shadow: 
+                    -4px -4px 0 #966F6F,  
+                    4px -4px 0 #966F6F,
+                    -4px 4px 0 #966F6F,
+                    4px 4px 0 #966F6F;
+               
+            }
+            }
+    
+            .para_btn{
+                width:100%; 
+                display: flex;
+                align-items: end;
+                align-content:end  ;
+                flex-direction: column;
+                gap:3rem;
+                
+                .para{
+                    p{ 
+                        font-family: 'montserrat subrayada',sans-serif;
+                        font-size:1rem;
+                        color:rgba(248, 220, 220, 0.7);
+                        text-decoration: none;
+                        text-decoration: none;
+                    }
+                    p:last-child{
+                        text-align: right;
+                        margin-top:.4rem;
+                    
+                    }
+                }
+                
+             }
+             .exp_link{
+                button{ 
+                    border:2px solid #F8DCDC;
+                    padding:.7rem 2rem;
+                    background:transparent;
+                    border-radius: 40px;
+                    color:#F8DCDC;
+                    font-weight:500;
+                    cursor: pointer;
+                    font-size:1.4rem;
+                    font-family: 'montserrat', sans-serif;
+    
+                    &:hover{ 
+                        background:#F8DCDC;
+                        color:#C81616;
+                    }
+                } 
+               
+             }
+          }
+          .socials{ 
+            display:flex; 
+            align-items: center;
+            justify-content: center;
+            gap:.8rem;
             
-         }
-         .exp_link{
-            button{ 
-                border:2px solid #F8DCDC;
-                padding:.7rem 2rem;
-                background:transparent;
-                border-radius: 40px;
+            .home-social--btn{
+                text-decoration: none;
                 color:#F8DCDC;
-                font-weight:500;
-                cursor: pointer;
-                font-size:1.4rem;
-                font-family: 'montserrat', sans-serif;
-
-                &:hover{ 
-                    background:#F8DCDC;
-                    color:#C81616;
+                .social-icon{ 
+                    font-size:2rem;
                 }
-            } 
+    
+             }
+          }
            
-         }
-      }
-      .socials{ 
-        
-        display:flex; 
-        align-items: center;
-        justify-content: center;
-        gap:.8rem;
-        
-        .home-social--btn{
-            text-decoration: none;
-            color:#F8DCDC;
-            .social-icon{ 
-                font-size:2rem;
-            }
-
-         }
-      }
-       
+        }
     }
+
 }

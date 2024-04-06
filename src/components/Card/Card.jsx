@@ -6,13 +6,13 @@ const Card = () =>{
     return (
         <>
         
-        <div className="card">
+      
             <div className='card-wrap'>
                     <div className='card-img'>
                         <img src="../../img/coffeeseven.png" alt="" />
                     </div>
                     <div className='card-details'>
-                        <h5 className="cof-name">
+                        <h5 className="cafe-name">
                             Rainforest Rhapsody 
                         </h5>
                         <div className="cafe-price">
@@ -22,7 +22,6 @@ const Card = () =>{
 
                     <button>Buy Now</button>
                 </div>
-        </div>
             
         </>
 

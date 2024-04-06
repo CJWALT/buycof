@@ -1,24 +1,55 @@
-.card{ 
-    border:1px solid red;
-        width:70%; 
-        margin:0 auto; 
-        overflow:hidden;
         
     .card-wrap{ 
-        border:1px solid red;
+        border:3px solid #f8dcdc;
+        background:#f8dcdc80;
+        border-radius: 17px;
+        width:20%; 
+        height:288px;
+        display:flex; 
+        align-items:center;
+        padding:24px 18px;
+        
+        flex-direction: column;
         .card-img{ 
-            border:1px solid red;
-            width:20px;
-            overflow:hidden;
-            height:20px;
-
+            width:100%;
+            display:flex; 
+            justify-content: center;
+            justify-self: center;
+            margin-bottom:16px;
+            
             img{ 
-                width:60%; 
-                height:auto;
+                width:100px; 
+                height:169px;
+                box-shadow: 4px 4px 4px #966F6F;
             }
+        }
+        .card-details{ 
+            display:flex; 
+            justify-content: space-between;
+            width:100%;
+            margin-bottom:9px;
+            .cafe-name, .cafe-price{ 
+                font-size:14px; 
+                font-family:'mada', sans-serif;
+                font-weight:400;
+            }
+        }
+
+        button{ 
+
+            padding:4px 30px;
+            border-radius: 20px;
+            cursor: pointer;
+            border:1px solid #9F1313;
+            background:transparent; 
+            color:white;
+            font-size:12px; 
+            font-weight:700; 
+            &:hover{ 
+                background:#9F1313;
+                border: none;;
+            }           
         }
     
     }
-
-}
 

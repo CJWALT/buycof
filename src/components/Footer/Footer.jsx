@@ -3,11 +3,14 @@ import './Footer.scss'
 
 const Footer = ()=>{ 
 
+  const date = new Date();
+
+  const {year} = date;
     return(
             <>
               <footer>
         <a href="https://www.github.com/cjwalt">cjwalt codes</a>
-       <small> &copy; 2024 buycof!
+       <small> &copy; {year} buycof!
         </small>
       </footer>
             </>

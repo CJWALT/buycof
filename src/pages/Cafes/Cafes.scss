@@ -3,8 +3,8 @@
 #wrapper{
     position:absolute; 
     top:0; 
-    width:100%;
-    border:1px solid red;
+    border:2px solid red;
+    // width:100%;
     background:radial-gradient(circle at top right, #F8DCDC, #966f6f);
 
     .cafes{ 
@@ -119,6 +119,18 @@
                  }
             }
         }
+    }
+    .cafe{
+        
+        width:75%; 
+        margin:0 auto; 
+        overflow:hidden;
+        display:flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:2rem;
+        padding-bottom:4rem;
     }
 
 }

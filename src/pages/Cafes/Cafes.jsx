@@ -44,8 +44,16 @@ const Cafes = ()=>{
 
                     </div>
 
-                    <div className='cafe-wrap'>
+                    <div className='cafe'>
                         <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        
                     </div>
                     
                 </div>
