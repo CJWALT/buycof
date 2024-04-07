@@ -3,9 +3,9 @@ import './Footer.scss'
 
 const Footer = ()=>{ 
 
-  const date = new Date();
+  const year = new Date().getFullYear();
 
-  const {year} = date;
+  
     return(
             <>
               <footer>

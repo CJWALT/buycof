@@ -3,7 +3,7 @@
         border:3px solid #f8dcdc;
         background:#f8dcdc80;
         border-radius: 17px;
-        width:20%; 
+        width:18%; 
         height:288px;
         display:flex; 
         align-items:center;
@@ -15,12 +15,12 @@
             display:flex; 
             justify-content: center;
             justify-self: center;
-            margin-bottom:16px;
-            
+            object-fit: cover;
             img{ 
                 width:100px; 
+                object-fit: cover;
                 height:169px;
-                box-shadow: 4px 4px 4px #966F6F;
+               
             }
         }
         .card-details{ 
@@ -35,6 +35,8 @@
             }
         }
 
+
+      
         button{ 
 
             padding:4px 30px;
@@ -44,12 +46,17 @@
             background:transparent; 
             color:white;
             font-size:12px; 
-            font-weight:700; 
+            font-weight:700;
+            transition: all 5ms ease; 
             &:hover{ 
                 background:#9F1313;
-                border: none;;
-            }           
+                border: none;
+                
+            } 
+            
+            
         }
+  
     
     }
 

@@ -1,15 +1,13 @@
 
-
 #wrapper{
     position:absolute; 
     top:0; 
-    border:2px solid red;
-    // width:100%;
+    left:0;
+    width:100%;
     background:radial-gradient(circle at top right, #F8DCDC, #966f6f);
 
     .cafes{ 
-        // position:absolute;
-       margin-top:8rem; 
+        
        height:auto;
     
         .header-banner{ 
@@ -129,7 +127,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap:2rem;
+        gap:4rem;
         padding-bottom:4rem;
     }
 

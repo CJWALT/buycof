@@ -4,12 +4,24 @@ import React from 'react'
 import './Cafes.scss'
 import SearchIcon from '@mui/icons-material/Search';
 import Card from '../../components/Card/Card';
-
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer';
+import useFetch from '../../hooks/useFetch';
+import { useParams } from 'react-router-dom';
 
 const Cafes = ()=>{ 
 
+
+    const cofId = useParams();
+    const {data} = useFetch("https://fake-coffee-api.vercel.app/api?limit=8");
+
+    
+   
+    
+
     return (
             <div id="wrapper">
+                <Navbar/>
                 <div className="cafes">
 
                     <div className="header-banner">
@@ -45,18 +57,21 @@ const Cafes = ()=>{
                     </div>
 
                     <div className='cafe'>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
+                        {
+                            data?.map(item =>(
+                                <Card 
+                                    name={item.name} 
+                                    key={item.id}
+                                    price={item.price}
+                                    image={item.image_url}
+                                    coffeeId={item.id}/>
+                            )) 
+                        }
                         
                     </div>
                     
                 </div>
+                <Footer/>
             </div>
           
        
