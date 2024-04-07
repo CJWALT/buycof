@@ -1,7 +1,6 @@
 #home-wrapper{
     position:absolute;
     width:100%;
-    left:0;
     height:100vh;
     top:0;
     background:radial-gradient(circle at top right, #C81616, #9F1313);
@@ -111,6 +110,7 @@
             align-items: center;
             justify-content: center;
             gap:.8rem;
+            z-index:99;
             
             .home-social--btn{
                 text-decoration: none;
