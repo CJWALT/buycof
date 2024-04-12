@@ -7,7 +7,7 @@ import Cart from '../Cart/Cart';
 
 const Navbar = () =>{ 
 
-    const [cartModal, setCartModal] = useState(true)
+    const [cartModal, setCartModal] = useState(false)
     
     const products = useSelector(state=>state.cart.products)
 
@@ -19,7 +19,7 @@ const Navbar = () =>{
                 <div className='nav_wrap'>
                     <div className="logo">
                         <Link to='/'>
-                            <img src="./img/LOGO.png" alt=" logo buycof" />
+                            <img src='../../img/LOGO.png' alt='buycof logo'/>
                         </Link>
                     </div>
                     <div className="links">
