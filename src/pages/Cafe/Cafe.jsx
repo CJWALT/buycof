@@ -1,19 +1,27 @@
-import React from 'react' 
+import React, { useState } from 'react' 
 import { Link, useParams } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
+import {useDispatch} from 'react-redux'
 import { AddShoppingCartSharp } from '@mui/icons-material';
+import { addToCart} from '../../redux/cartReducer'
 import './Cafe.scss'
 
 const Cafe = ()=>{ 
 
     const id = useParams().id;
 
+    const [quantity , setQuantity] = useState(1)
+    
+    const dispatch = useDispatch();
+
+
     const { data } = useFetch(`https://fake-coffee-api.vercel.app/api/${id}`)
 
     // console.log(data)
+
     return(
         <div id="wrapper"> 
             <Navbar />
@@ -40,11 +48,15 @@ const Cafe = ()=>{
         
         
                         <div className='quantity-btn'>
-                            <span className='inc-btn'>-</span>
-                            <span className='quantity-no'>1</span>
-                            <span className='dec-btn'>+</span>
+                        <span className='inc-btn' onClick={()=>setQuantity(prev=> prev === 1 ? 1 : prev -1 )}>-</span>
+                            <span className='quantity-no'>{quantity}</span>
+                            <span className='dec-btn' onClick={()=>setQuantity(prev=> prev + 1 )}>+</span>
                         </div>
-                        <button><AddShoppingCartSharp className='add-btn'/>  Add to Cart</button>
+                        <button onClick={ 
+                            ()=> dispatch(addToCart({ 
+                                id:data.id
+                            }))
+                        }><AddShoppingCartSharp className='add-btn'/>  Add to Cart</button>
                     
                         <div className='other-links'>
                             <hr/>

@@ -1,36 +1,41 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 
+const useFetch = (url, sortParam, limitParam) => {
+  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState([]);
+  const [error, setError] = useState(null);
 
-const useFetch = (url)=>{ 
-
-
-    const [loading, setLoading] = useState(false); 
-    const [data, setData] = useState([]); 
-    const [err, seterr] = useState(false)
-
-
-
-    useEffect(()=>{ 
-
-        const fetchData = async () =>{ 
-            try{
-                setLoading(true); 
-                const res = await axios.get(url);
-                setData(res.data)
-                // console.log(res);
-            }
-            catch(err){ 
-                console.log(err)
-            }
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        let apiUrl = url;
+        
+        // Append sort parameter if provided
+        if (sortParam) {
+          apiUrl += `?sort=${sortParam}`;
         }
-        fetchData();
-    }, [url]);
+        
+        // Append limit parameter if provided
+        if (limitParam) {
+          apiUrl += `&limit=${limitParam}`;
+        }
 
-    return {data, loading, err}
+        const res = await axios.get(apiUrl);
+        setData(res.data);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setError(error);
+        setLoading(false);
+      }
+    };
 
+    fetchData();
+  }, [url, sortParam, limitParam]);
 
-} 
+  return { data, loading, error };
+};
 
-
-export default useFetch; 
+export default useFetch;

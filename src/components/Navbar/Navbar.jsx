@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import './Navbar.scss'
+import { useSelector } from 'react-redux';
+import Cart from '../Cart/Cart';
 
 const Navbar = () =>{ 
+
+    const [cartModal, setCartModal] = useState(true)
+    
+    const products = useSelector(state=>state.cart.products)
 
 
 
@@ -22,12 +28,14 @@ const Navbar = () =>{
                     </div>
                     <div className="cart_btn">
                         <div className="btn">
-                            <span>0</span>
+                            <span>{products.length}</span>
                             <ShoppingCartOutlinedIcon className="cart_icon"/>
                         </div>
                         
                     </div>
                 </div>
+
+                {cartModal && <Cart/>}
 
         </nav>
     )

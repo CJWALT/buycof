@@ -1,6 +1,6 @@
 
 
-import React from 'react' 
+import React, { useState } from 'react' 
 import './Cafes.scss'
 import SearchIcon from '@mui/icons-material/Search';
 import Card from '../../components/Card/Card';
@@ -11,15 +11,14 @@ import { useParams } from 'react-router-dom';
 
 const Cafes = ()=>{ 
 
+    const [sort, setSort] = useState('asc')
+
 
     const cofId = useParams();
-    const {data} = useFetch("https://fake-coffee-api.vercel.app/api?limit=8");
+    const {data, loading} = useFetch(`https://fake-coffee-api.vercel.app/api`, `${sort}`, 8);
 
     
-   
-    
-
-    return (
+        return (
             <div id="wrapper">
                 <Navbar/>
                 <div className="cafes">
@@ -33,17 +32,17 @@ const Cafes = ()=>{
                             <h4>Sort By: </h4>
                             <div className='sort-input'>
                                     <div className='asc'>
-                                        <input type="radio" id='asc'/>
+                                        <input type="radio" id='asc' name='price' value='asc' onChange={(e=>setSort('asc'))}/>
                                         <label htmlFor="asc">
                                             Price (Lowest First)
                                         </label>
                                     </div>
 
                                     <div className='desc'>
-                                        <input type ="radio" id='desc'/>
+                                        <input type ="radio" name='price' value='asc' id='desc' onChange={(e=>setSort('desc'))}/>
                                         <label htmlFor="desc">
                                             Price(Highest First)
-                                        </label>
+                                        </label>        
                                     </div>
                                 </div>
 
@@ -57,14 +56,14 @@ const Cafes = ()=>{
                     </div>
 
                     <div className='cafe'>
-                        {
-                            data?.map(item =>(
+                        {loading ? <div className='loading'>Loading... </div> : data?.map(item =>(
                                 <Card 
                                     name={item.name} 
                                     key={item.id}
                                     price={item.price}
                                     image={item.image_url}
-                                    coffeeId={item.id}/>
+                                    coffeeId={item.id}
+                                    sort={sort}/>
                             )) 
                         }
                         

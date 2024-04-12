@@ -1,0 +1,70 @@
+.cart-wrap{ 
+    position:absolute; 
+    top:100px; 
+    right:10rem; 
+    padding:24px 25px;
+    background:#F8DCDC;
+    border-radius:5px; 
+    display:flex; 
+    flex-direction: column;
+    gap:20px;
+
+    .img-price{ 
+        padding:10px;
+        display:flex; 
+        gap:1rem;
+        flex-direction: row;
+        border:1px solid #9F1313;
+        
+        img{ 
+            width:53px; 
+            height:70px;
+        }
+
+        .cofname-price{ 
+            align-self:center;
+            h5{ 
+                font-family:'montserrat', sans-serif; 
+                font-size:1rem;
+                font-weight:700;
+                margin-bottom: .4rem;
+            }
+            small.price{ 
+                font-size:1rem; 
+                font-family: 'montserrat', sans-serif;
+                font-weight:400;
+            }
+        }
+
+    }
+    .total-checkout__btn{ 
+        display:flex; 
+        flex-direction: column;
+        width:85%;
+        margin:0 auto;
+        gap:14px;
+        .total-wrap{ 
+            display:flex; 
+            width:100%; 
+            justify-content: space-between;
+            h4{ 
+                font-family:'montserrat', sans-serif;
+                font-size:1rem; 
+                color:#966F6F;
+            }
+        }
+        button{ 
+            width:200px; 
+            height:45px; 
+            border-radius:16px;
+            border:none;
+            background:#C81616;
+            font-family:'montserrat', sans-serif;
+            font-weight:700; 
+            color:white;
+            font-size:1rem;
+            cursor:pointer;
+        }
+    }
+
+}
