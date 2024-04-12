@@ -8,6 +8,7 @@
     display:flex; 
     flex-direction: column;
     gap:20px;
+    justify-content: center;
 
     .img-price{ 
         padding:10px;
@@ -15,10 +16,13 @@
         gap:1rem;
         flex-direction: row;
         border:1px solid #9F1313;
+        justify-content: space-between;
+        width:100%;
         
         img{ 
             width:53px; 
             height:70px;
+            object-fit:cover;
         }
 
         .cofname-price{ 
@@ -34,6 +38,10 @@
                 font-family: 'montserrat', sans-serif;
                 font-weight:400;
             }
+        }
+        .delete-btn{
+            align-self: center;
+            cursor:pointer; 
         }
 
     }
@@ -57,6 +65,7 @@
             width:200px; 
             height:45px; 
             border-radius:16px;
+            margin:0 auto;
             border:none;
             background:#C81616;
             font-family:'montserrat', sans-serif;
@@ -65,6 +74,11 @@
             font-size:1rem;
             cursor:pointer;
         }
+    }
+    .reset-btn{ 
+        cursor:pointer; 
+        font-weight:700; 
+        font-family: 'montserrat', sans-serif;
     }
 
 }

@@ -20,7 +20,6 @@ const Cafe = ()=>{
 
     const { data } = useFetch(`https://fake-coffee-api.vercel.app/api/${id}`)
 
-    // console.log(data)
 
     return(
         <div id="wrapper"> 
@@ -54,7 +53,12 @@ const Cafe = ()=>{
                         </div>
                         <button onClick={ 
                             ()=> dispatch(addToCart({ 
-                                id:data.id
+                                id:item.id,
+                                title:item.name,
+                                img:item.image_url,
+                                price:item.price,
+                                quantity
+
                             }))
                         }><AddShoppingCartSharp className='add-btn'/>  Add to Cart</button>
                     

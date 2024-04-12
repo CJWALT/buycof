@@ -26,7 +26,7 @@ const Navbar = () =>{
                         <Link to='/'className='link'>Home</Link>
                         <Link to='/cafes'className='link'>Cafe</Link>
                     </div>
-                    <div className="cart_btn">
+                    <div className="cart_btn" onClick={()=>setCartModal(!cartModal)}>
                         <div className="btn">
                             <span>{products.length}</span>
                             <ShoppingCartOutlinedIcon className="cart_icon"/>

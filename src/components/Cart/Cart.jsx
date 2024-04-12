@@ -1,25 +1,45 @@
 import React from 'react' 
 import './Cart.scss'
+import { useDispatch, useSelector } from 'react-redux'
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import { removeItem, resetItem } from '../../redux/cartReducer';
 
 
 
  const Cart = ()=>{
 
+    const products = useSelector(state => state.cart.products)
+
+    
+    const dispatch = useDispatch()
+
+    const totalPrice = () =>{ 
+
+        let total = 0;
+        products.forEach((item)=> (total += item.quantity * item.price))
+        return total.toFixed(2);
+    }
+
     return (
         <>
             <div className='cart-wrap'> 
-                <div className='img-price'>
-                    <img src="../img/coffeeseven.png" alt="item " />
-                    <div className="cofname-price">
-                        <h5 className='cofname'>Signature Blend</h5>
-                        <small className="price">1 x $30</small>
-                    </div>
+
+            {products?.map(item=> (
+                <div className='img-price' key={item.id}>
+                <img src={item.img} alt="item " />
+                <div className="cofname-price">
+                    <h5 className='cofname'>{item.title}</h5>
+                    <small className="price">{item.quantity} x { item.price} </small>
                 </div>
+                <DeleteOutlineIcon className='delete-btn' onClick={ ()=> dispatch(removeItem(item.id))}/>
+            </div>
+            ))}
+          
 
                 <div className='total-checkout__btn'>
                     <div className='total-wrap' >
-                        <h4>Total:</h4>
-                        <h4>$30</h4>
+                        <h4>SUBTOTAL:</h4>
+                        <h4>{totalPrice()}</h4>
                     </div>
                     
                     <button>
@@ -27,6 +47,8 @@ import './Cart.scss'
                 </button>
 
                 </div>
+
+                <span className='reset-btn' onClick={ ()=> dispatch(resetItem()) }>Reset</span>
                
 
 
