@@ -20,6 +20,7 @@ const Navbar = () =>{
                     <div className="logo">
                         <Link to='/'>
                             <img src='../../img/LOGO.png' alt='buycof logo'/>
+                            
                         </Link>
                     </div>
                     <div className="links">

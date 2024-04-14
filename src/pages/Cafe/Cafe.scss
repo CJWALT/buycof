@@ -1,7 +1,7 @@
 .cafe-wrap{ 
     
     width:80%; 
-    height:auto;
+    height:calc(100vh - 40px);
     overflow:hidden;
     margin:0 auto;
     position: relative;
@@ -9,6 +9,7 @@
     flex-direction: row;
     flex-wrap:wrap;
     gap:20px;
+    border:1px solid red;
     padding:5rem 0;
     
     .cafe-img_small{ 
