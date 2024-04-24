@@ -131,6 +131,17 @@
 // media responsive
 
 
+@media (max-width:2560px){
+        #home-wrapper{ 
+            .home{ 
+                .mobile-banner{ 
+                    display:none;
+                    
+                }
+            }
+        }
+}
+
 
 @media (max-width:640px){
 
@@ -140,7 +151,7 @@
             
             .home_wrap{
                 justify-content: start;
-                width:90%;
+                width:95%;
                 .banner_wrap{ 
                     
                     height: 500px;
@@ -149,11 +160,25 @@
                     width:100%;
                     z-index:99;
                     .center_bar{ 
+                        width:100%;
                         span.bar_before{ 
-                            width:78px;
+                            width:4.8rem;
+                            flex:1;
                         }
                         h2{ 
-                            font-size:66px;
+                            font-size:3.8rem;
+                            flex:2; 
+                            text-align:end;
+                            z-index:-10;
+                            
+                        }
+                    }
+                    .para_btn{ 
+                        .para{ 
+                            p{ 
+                                font-size:.8rem;
+                                color:#F8DCDC;
+                            }
                         }
                     }
                 }

@@ -119,6 +119,7 @@ nav{
 @media (max-width:640px){ 
 
     nav{ 
+        z-index:99;
         position:relative;
         
         .nav_wrap{
