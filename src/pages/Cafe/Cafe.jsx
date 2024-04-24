@@ -29,13 +29,16 @@ const Cafe = ()=>{
                 data?.map(item=>(
 
                     <div className='cafe-wrap' key={item.id}>
-                    <div className='cafe-img_small'> 
-                        <img src={item.image_url} alt= ""/>
-                    </div>
-        
-                    <div className='cafe-img_large'>
-                        <img src={item.image_url} alt=""/>
-                    </div>
+                        <div className='cafe-img__wrap'>
+                            <div className='cafe-img_small'> 
+                            <img src={item.image_url} alt= ""/>
+                        </div>
+            
+                        <div className='cafe-img_large'>
+                            <img src={item.image_url} alt=""/>
+                        </div>
+                        </div>
+                  
         
                     <div className='cafe-details'>
                         <div>

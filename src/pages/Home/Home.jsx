@@ -57,6 +57,9 @@ const Home = ()=>{
                 
 
                 </div>
+                <div className='mobile-banner'>
+                    <img src='../img/bg-five.png' alt='mobile banner'/>
+                </div>
             <Slider/>
             
             </div>

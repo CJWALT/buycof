@@ -44,16 +44,18 @@ nav{
         .cart_btn{ 
             
             display:flex; 
+            gap:20px;
             justify-content: flex-end;
             flex:1;
-
+           
             .btn{ 
                 position:relative; 
                 background:#FFFFFFCC;
                 border-radius: 50%;
                 box-shadow:inset 0 0 0 4px #966F6F;     
-                width:4rem; 
-                height:4rem;
+                width:3rem; 
+                height:3rem;
+                align-self: center;
                 display:flex; 
                 justify-content: center;
                 padding:.6rem;
@@ -73,6 +75,8 @@ nav{
                 color:#C81616;
                 background:#F8DCDC; 
                 border-radius:50%;
+                animation: slideDown ;     
+                transition:all 3s ease-out;
 
                 }
                 .cart_icon{ 
@@ -83,6 +87,88 @@ nav{
                 }
 
             }
+            .menu-btn{ 
+                align-self:center;
+                color:white;
+                width:3.5rem;
+                height:3.5rem;
+                cursor:pointer;
+                display:none;
+            }
         }
+    }
+}
+
+// media responsive
+
+// @media (max-width:1024px){ 
+
+//     nav{ 
+//         .nav_wrap{ 
+//             .cart_btn{
+//                 .menu-btn{ 
+//                     // display:none;
+//                 }
+//             }
+//         }
+//     }
+
+// }
+
+
+@media (max-width:640px){ 
+
+    nav{ 
+        position:relative;
+        
+        .nav_wrap{
+            width:90%;
+            .logo{
+                img{
+                    width:80%;
+                }
+            }
+        
+        .links{ 
+            display:none;
+            position:absolute;
+            top:0; 
+            border-radius: 8px;
+            right:0; 
+            // display:flex; 
+            flex-direction: column;
+            padding:10px;
+            width:172px; 
+            height:288px;
+            justify-content: center;
+            background:#F8DCDCFF;
+            transition: all .3s ease;
+            z-index:99;
+            &.open{ 
+                display:flex;
+            }
+            .link{ 
+                align-self:center
+            }
+            
+        }
+        .cart_btn{ 
+            .menu-btn{
+                display:block;
+            }
+        }
+    }
+}
+}
+
+
+
+
+@keyframes slideDown { 
+    0%{ 
+        transform: translateY(-100px)
+    }
+    100%{ 
+        transform: translateY(0px);
     }
 }

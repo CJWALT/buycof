@@ -131,5 +131,51 @@
 }
 
 
+@media (max-width: 640px){ 
+    #wrapper{ 
+        .cafes{ 
+            .header-banner{
+                background-position: center;
+            }
+            .sort-search{ 
+               
+                justify-content: center;
+                align-content:center;
+                overflow:hidden;
+                gap:10px;
+                flex-direction: column;
+                .sort-wrap{
+                    width:70%;
+                    h4{
+                        flex:1;
+                        font-size:20px;
+                    }
+                    .sort-input{ 
+                        flex:2;
+                        .asc, .desc{ 
+                            label{
+                                font-size:13px;
+                            }
+                        }
+                    }
+                }.search{ 
+                    width:70%;
+                    input[type=text]{ 
+                        width:200px;
+                    }
+                                    }
+            }
+            .cafe{ 
+                .card-wrap{ 
+                    width:58%;
+                }
+            }
+        }
+    }
+   
+    
+}
+
+
 
 

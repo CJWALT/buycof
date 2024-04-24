@@ -117,3 +117,20 @@
         }
     }
 }
+
+
+
+
+@media (min-width: 640px){ 
+    .cafe-wrap{ 
+        border:1px solid red;
+        .cafe-img__wrap{ 
+            .cafe-img_small{ 
+                order:2;
+            }
+            .cafe-img_large{ 
+                order:1;
+            }
+        }
+    }
+}

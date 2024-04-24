@@ -126,3 +126,59 @@
     }
 
 }
+
+
+// media responsive
+
+
+
+@media (max-width:640px){
+
+
+    #home-wrapper{ 
+        .home{
+            
+            .home_wrap{
+                justify-content: start;
+                width:90%;
+                .banner_wrap{ 
+                    
+                    height: 500px;
+                    // border:2px solid blue;
+                    overflow:hidden;
+                    width:100%;
+                    z-index:99;
+                    .center_bar{ 
+                        span.bar_before{ 
+                            width:78px;
+                        }
+                        h2{ 
+                            font-size:66px;
+                        }
+                    }
+                }
+            }
+            .mobile-banner{
+                height:400px;
+                width:100%;
+                // border:1px solid red;
+                position:absolute;
+                
+                bottom:0;
+                right:0;
+                left:0;
+                display:flex; 
+                justify-content: end;
+                img{ 
+                    position:relative;
+                    width:100%;
+                    object-fit:cover;
+                    align-self:end;
+                    height:auto;
+                }
+            }
+        }
+    }
+
+
+ }
