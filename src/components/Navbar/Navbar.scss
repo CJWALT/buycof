@@ -66,24 +66,24 @@ nav{
                 display:flex; 
                 font-family:'mada', sans-serif;
                 font-weight:500;
+                font-size:.8rem;
                 top:0;
                 right:0;
                 justify-content: center;
                 align-items: center;
-                width:1.4rem; 
-                height:1.4rem; 
+                width:1.2rem; 
+                height:1.2rem; 
                 color:#C81616;
                 background:#F8DCDC; 
                 border-radius:50%;
-                animation: slideDown ;     
-                transition:all 3s ease-out;
+             
 
                 }
                 .cart_icon{ 
                     color:#9F1313;
                     align-self: center;
-                    width:2rem; 
-                    height:2rem;
+                    width:1.4rem; 
+                    height:1.4rem;
                 }
 
             }
@@ -143,10 +143,11 @@ nav{
             height:288px;
             justify-content: center;
             background:#F8DCDCFF;
-            transition: all .3s ease;
             z-index:99;
             &.open{ 
                 display:flex;
+                transition: all;
+                animation:slideDown .3s ease-in;  
             }
             .link{ 
                 align-self:center
@@ -169,6 +170,7 @@ nav{
     0%{ 
         transform: translateY(-100px)
     }
+    
     100%{ 
         transform: translateY(0px);
     }

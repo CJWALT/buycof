@@ -148,17 +148,14 @@
 
     #home-wrapper{ 
         .home{
-            
             .home_wrap{
                 justify-content: start;
                 width:95%;
                 .banner_wrap{ 
-                    
-                    height: 500px;
-                    // border:2px solid blue;
+                    height: 450px;
                     overflow:hidden;
                     width:100%;
-                    z-index:99;
+                    z-index:70;
                     .center_bar{ 
                         width:100%;
                         span.bar_before{ 
@@ -176,7 +173,7 @@
                     .para_btn{ 
                         .para{ 
                             p{ 
-                                font-size:.8rem;
+                                font-size:.7rem;
                                 color:#F8DCDC;
                             }
                         }

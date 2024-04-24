@@ -5,7 +5,15 @@
     left:0;
     width:100%;
     background:radial-gradient(circle at top right, #F8DCDC, #966f6f);
-
+    .loading{
+        transition:all ease;
+        transform:scale(1.3);
+        width:100%; 
+        text-align: center;
+        padding:10px;
+        color:red; 
+        font-size:2rem;
+    }
     .cafes{ 
         
        height:auto;
@@ -167,7 +175,9 @@
             }
             .cafe{ 
                 .card-wrap{ 
-                    width:65%;
+                    width:60%;
+                    max-width:75%;
+                    
                 }
             }
         }

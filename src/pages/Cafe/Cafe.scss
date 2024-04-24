@@ -127,7 +127,8 @@
 
 @media (max-width: 640px){ 
     .cafe-wrap{ 
-        border:1px solid red;
+        padding:0;
+        
         .cafe-img__wrap{ 
             .cafe-img_small{ 
                 display:none;
@@ -135,6 +136,14 @@
             .cafe-img_large{ 
                 order:1;
                 width:100%;
+                img{ 
+                    height:350px;
+                }
+            }
+        }
+        .cafe-details{
+            button{
+                width:300px;
             }
         }
     }

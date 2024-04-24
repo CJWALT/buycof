@@ -1,7 +1,6 @@
 import React, { useState } from 'react' 
 import { Link, useParams } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import {useDispatch} from 'react-redux'
@@ -18,15 +17,14 @@ const Cafe = ()=>{
     const dispatch = useDispatch();
 
 
-    const { data } = useFetch(`https://fake-coffee-api.vercel.app/api/${id}`)
+    const { data, loading } = useFetch(`https://fake-coffee-api.vercel.app/api/${id}`)
 
 
     return(
         <div id="wrapper"> 
             <Navbar />
 
-            {
-                data?.map(item=>(
+            {loading ? <div className='loading'> Loading.. </div> :  data?.map(item=>(
 
                     <div className='cafe-wrap' key={item.id}>
                         <div className='cafe-img__wrap'>
@@ -77,7 +75,7 @@ const Cafe = ()=>{
                   </div>
         
                 ))
-            }
+         }
             
          
             <Footer/>

@@ -9,6 +9,7 @@
     flex-direction: column;
     gap:20px;
     justify-content: center;
+    animation: slideDown .8s ease;
 
     .img-price{ 
         padding:10px;
@@ -81,4 +82,25 @@
         font-family: 'montserrat', sans-serif;
     }
 
+}
+
+@media (max-width: 640px){ 
+
+    .cart-wrap{
+        right:0;
+    }
+
+
+
+}
+
+
+@keyframes slideDown { 
+    0%{ 
+        transform: translateY(-100px)
+    }
+    
+    100%{ 
+        transform: translateY(0px);
+    }
 }
