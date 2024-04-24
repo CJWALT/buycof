@@ -46,11 +46,15 @@
         gap:30px;
         padding:30px;
         font-family:'montserrat', sans-serif;
-        font-size:36px; 
+        
         font-weight:700;
         color:white;
+        .cafe-name{ 
+            font-size:2.2rem;
+        }
         .cafe-price{ 
             margin-top:30px;
+            font-size:2.2rem;
         }
         .cafe-flavor{ 
             font-size:1rem;
@@ -142,9 +146,15 @@
             }
         }
         .cafe-details{
+            .cafe-name, .cafe-price{ 
+                font-size:1.9rem;
+            }
             button{
-                width:300px;
+                width:200px;
+                height:50px;
+                font-size:1rem;
             }
         }
+       
     }
 }
