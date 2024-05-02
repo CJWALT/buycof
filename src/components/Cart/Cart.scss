@@ -87,7 +87,8 @@
 @media (max-width: 640px){ 
 
     .cart-wrap{
-        width:300px;
+        min-width:300px;
+        width:250px;
         right:0;
     }
 
