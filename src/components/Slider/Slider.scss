@@ -74,11 +74,55 @@
 
 //media responsive
 
+
 @media (max-width:640px){ 
 
     .slider{ 
         display:none;
     }
+}
 
+@media (min-width:640px) and (max-width:768px){
+
+    .slider{ 
+        .container{ 
+            span{
+                &.slide-one, &.slide-two, &.slide-three{ 
+                    background-size:366px;
+                    background-position:447px;
+                }
+            }
+           
+        }
+    }
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+
+    .slider{ 
+        .container{
+            span{ 
+                &.slide-one, &.slide-two, &.slide-three{ 
+                    background-size:390px; 
+                    background-position:bottom right;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1024px) and (max-width:1280px){ 
+
+    .slider{ 
+        .container{
+            span{ 
+                &.slide-one, &.slide-two, &.slide-three{ 
+                    background-size:440px; 
+                    background-position:bottom right;
+                }
+            }
+        }
+    }
 
 }

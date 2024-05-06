@@ -21,6 +21,7 @@
             gap:4rem;
 
           .banner_wrap{ 
+            overflow: hidden;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -33,6 +34,8 @@
                 flex-direction: row;
                 align-items: center;
                 white-space:nowrap;
+                width:100%; 
+                justify-content: space-between;
                 gap:.8rem;
             
             
@@ -47,7 +50,7 @@
             }
     
             h2{ 
-                font-size:106px;
+                font-size:5.3rem;
                 font-weight:700;
                 font-family: 'Sahitya', sans-serif;
                 color:white;
@@ -142,6 +145,75 @@
         }
 }
 
+@media (min-width:1024px) and (max-width:1280px){ 
+    
+    #home-wrapper{ 
+        .home{ 
+            .home_wrap{ 
+                .banner_wrap{ 
+                    
+                    width:58%; 
+                    min-width:58%;
+                    .center_bar{
+                        width:100%;
+                        justify-content: space-between;
+                        span.bar_before{ 
+                            width:5.18rem;
+                        }
+                        h2{ 
+                            font-size:5.25rem
+                        }
+            
+                    }
+                .para_btn{ 
+                    .para{ 
+                        p{
+                            font-size:.9rem;
+                        }
+                    }
+                }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+    #home-wrapper{ 
+        .home{ 
+            .home_wrap{ 
+                
+                .banner_wrap{ 
+                    width:54%;
+                    
+                    
+                    .center_bar{ 
+                        justify-content: space-between;
+                        width:100%;
+                        span.bar_before{ 
+                            width:125px;
+                        }
+                    h2{ 
+                        font-size:4rem;
+                        
+                    }
+                    }
+                    
+                    .para_btn{ 
+                        .para{ 
+                            p{ 
+                                font-size:.7rem;
+                            }
+                        }
+                    }
+                
+                }
+               
+            }
+        }
+    }
+}
 
 
 
@@ -152,21 +224,28 @@
             .home_wrap{
                 width:90%;
                 .banner_wrap{ 
-                    // background:white;
-                    overflow:hidden;
                     align-items:flex-start;
-                    width:100%;
-                    border:1px solid red;
+                    width:58%;
+                    min-width:5%;
+                    
                     .center_bar{ 
+                        width:100%; 
+                        justify-content: space-between;
                         span.bar_before{ 
                             width:4rem;
                         }
                         h2{ 
-                            font-size:3rem;
+                            font-size:3.8rem;
                         }
                     }
                     .para_btn{
-                        align-items:flex-start
+                        
+                        .para{
+                            p {
+                                font-size:.7rem;
+                            }
+    
+                        }            
                     }
                 }
             }
