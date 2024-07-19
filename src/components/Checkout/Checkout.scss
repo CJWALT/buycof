@@ -1,0 +1,85 @@
+.checkout-wrap{ 
+    position:absolute;
+    top:0; 
+    left:0;
+    background:#00000080;
+    
+    height:100vh;
+    width:100vw;
+    display:flex; 
+    justify-content: center;
+    z-index:40;
+    align-items: center;
+
+        .item-ordered{ 
+            display: flex;
+            background: white;
+            flex-direction: column;
+            gap:8px;
+            overflow:hidden;
+            width:95%;
+            padding:15px;
+            border-radius: 10px;
+            max-width:20rem;
+            .close-order{ 
+                float:right;
+                cursor: pointer;
+                small{ 
+                    float:right;
+                    font-size:14px; 
+                    color:green;
+                    font-weight:600
+                }
+            }
+            .icon{ 
+                color:green;
+                display:flex; 
+                align-items: center;
+                justify-content: space-between;
+            }
+            .order-heading{
+                line-height: none;
+                font-family: 'mada', sans-serif;
+            }
+            .order-para{ 
+                font-size:15px;
+                font-family: 'poppins', sans-serif;
+            }
+            .item-list{
+                padding:8px;
+                display:flex;
+                flex-direction: row;
+                border:1px solid red;
+                overflow:hidden;
+                box-shadow: 2px bottom solid black;
+                .order-img{ 
+                    
+                    height:auto;
+                    img{ 
+                        width:5rem;
+                    }
+                }
+                .item-details{
+                    display:flex;
+                    flex-direction: column;
+                    align-self:center;
+                    small{ 
+                        font-size:14px;
+                        font-family: 'mada', sans-serif;
+                    }
+                
+                    
+                }
+            }
+            .total{ 
+                margin-top: 10px;
+                display:flex;
+                justify-content: space-between;
+                small{
+                    font-weight:700;
+                    font-family: 'mada', sans-serif;
+                }
+            }
+        }
+    
+}

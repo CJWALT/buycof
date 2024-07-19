@@ -20,14 +20,16 @@
             margin:0 auto;
             gap:4rem;
 
-          .banner_wrap{ 
+          .banner_wrap{
+
             overflow: hidden;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap:15px;
-            width:50%; 
+            width:50%;
+            z-index: 1; 
     
             .center_bar{
                 display:flex; 
@@ -158,7 +160,7 @@
                         width:100%;
                         justify-content: space-between;
                         span.bar_before{ 
-                            width:5.18rem;
+                            width:6rem;
                         }
                         h2{ 
                             font-size:5.25rem
@@ -267,7 +269,7 @@
                     height: 450px;
                     overflow:hidden;
                     width:100%;
-                    z-index:70;
+                    // z-index:70;
                     .center_bar{ 
                         width:100%;
                         span.bar_before{ 

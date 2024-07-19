@@ -1,14 +1,18 @@
-import React from 'react' 
+import React, { useState } from 'react' 
 import './Cart.scss'
 import { useDispatch, useSelector } from 'react-redux'
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import { removeItem, resetItem } from '../../redux/cartReducer';
+import Checkout from '../Checkout/Checkout';
+
 
 
 
  const Cart = ()=>{
 
     const products = useSelector(state => state.cart.products)
+
+    const [checkout, setCheckout] = useState(false)
 
     
     const dispatch = useDispatch()
@@ -19,6 +23,15 @@ import { removeItem, resetItem } from '../../redux/cartReducer';
         products.forEach((item)=> (total += item.quantity * item.price))
         return total.toFixed(2);
     }
+
+    const handleCheckOutClick = (e)=>{ 
+            e.preventDefault();
+        setCheckout(!checkout)
+    }
+
+    
+
+
 
     return (
         <>
@@ -42,9 +55,9 @@ import { removeItem, resetItem } from '../../redux/cartReducer';
                         <h4>{totalPrice()}</h4>
                     </div>
                     
-                    <button>
+                    <button onClick={handleCheckOutClick}>
                     Proceed to Checkout 
-                </button>
+                    </button>
 
                 </div>
 
@@ -53,6 +66,12 @@ import { removeItem, resetItem } from '../../redux/cartReducer';
 
 
             </div>
+
+            {
+                checkout && <Checkout
+                        product= {products}
+                        handleCheckOutClick={handleCheckOutClick} />  
+            }
         
         </>
     )

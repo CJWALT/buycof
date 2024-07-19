@@ -7,7 +7,7 @@ nav{
     align-items: center;
     position: relative;
     width:100%;
-    z-index: 99;
+    z-index: 10;
 
     .nav_wrap{ 
         display:flex; 
@@ -101,25 +101,12 @@ nav{
 
 // media responsive
 
-// @media (max-width:1024px){ 
-
-//     nav{ 
-//         .nav_wrap{ 
-//             .cart_btn{
-//                 .menu-btn{ 
-//                     // display:none;
-//                 }
-//             }
-//         }
-//     }
-
-// }
 
 
 @media (max-width:640px){ 
 
     nav{ 
-        z-index:99;
+        // z-index:99;
         position:relative;
         
         .nav_wrap{
