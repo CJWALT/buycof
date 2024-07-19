@@ -83,3 +83,14 @@
         }
     
 }
+
+// media queries
+
+@media (min-width:640px){
+
+    .checkout-wrap .item-ordered .item-list .item-details small{
+        font-size:20px;
+    }
+
+
+}
