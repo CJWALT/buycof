@@ -139,6 +139,38 @@
 }
 
 
+// media queries
+
+
+@media only screen and (min-width:1028px){ 
+
+    
+    #wrapper{ 
+        .cafe{ 
+            gap:5rem
+        }
+    }
+
+}
+@media only screen and (max-width:968px){ 
+
+    #wrapper{ 
+        .cafe{ 
+            gap:3rem;
+            width:75%;
+        }
+    }
+}
+
+@media (min-width:640px){ 
+    #wrapper{ 
+        .cafe{ 
+            width:90%;
+            gap:2rem;
+        }
+    }   
+}
+
 @media (max-width: 640px){ 
     #wrapper{ 
         .cafes{ 
@@ -174,11 +206,9 @@
                                     }
             }
             .cafe{ 
-                .card-wrap{ 
-                    width:60%;
-                    min-width:75%;
-                    max-width:60%;
-                }
+                gap:1rem;
+                width:90%;
+                
             }
         }
     }

@@ -60,3 +60,46 @@
     
     }
 
+    @media only screen and (max-width:465px){
+        .card-wrap {
+            width:40%;
+            .card-details{ 
+                .cafe-price{ 
+                    .cafe-name{ 
+                        font-size:12px !important;
+                    }
+                }
+            }
+            button{ 
+                padding:4px 10px;
+            }
+        }
+       }
+
+    @media only screen and (min-width:465px){
+        .card-wrap{ 
+            width:42%;
+        }
+    }
+
+    @media only screen and (min-width:640px){
+            .card-wrap{ 
+                width:30%;
+            }
+    }
+    @media only screen and (min-width:768px){
+        .card-wrap{ 
+            width:26%;
+        }
+    }
+
+    @media only screen and (min-width:968px){
+    .card-wrap{ 
+        width:20%;
+    }
+    }
+
+    @media only screen and (min-width:1028px){
+        .card-wrap{ width:18%;
+        }
+    }
