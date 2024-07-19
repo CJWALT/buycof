@@ -102,13 +102,30 @@ nav{
 // media responsive
 
 
+    @media only screen and (min-width:640px){ 
 
-@media (max-width:640px){ 
+        nav{
+            .nav_wrap {
+                .logo {
+                    img{ 
+                        max-width: 68%;
+                        width: 84%;
+                        height: auto;
+                    }
+                }
+                .links{ 
+                    font-size:1.2rem;
+                }
+            }
+
+        } 
+
+}
+
+@media only screen and (max-width:640px){ 
 
     nav{ 
-        // z-index:99;
         position:relative;
-        
         .nav_wrap{
             width:90%;
             .logo{
