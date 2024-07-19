@@ -163,7 +163,27 @@
 }
 
 @media (min-width:640px){ 
-    #wrapper{ 
+    #wrapper{
+        .cafes{ 
+            .sort-search{
+                .sort-wrap{
+                   h4{ 
+                    font-size:30px;
+                   } 
+                   .sort-input{
+                    label{ 
+                        font-size:14px;
+                    }
+                }
+                
+                }
+                .search{ 
+                    input[type=text]{ 
+                        width:200px;
+                    }
+                }
+            }
+        } 
         .cafe{ 
             width:90%;
             gap:2rem;
